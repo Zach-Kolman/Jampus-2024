@@ -6,16 +6,17 @@ public class DocWalk : MonoBehaviour
 {
     public float walkSpeed = 2f; // Speed of movement
     public float walkDuration = 5f; // Duration to move in seconds
+    public Vector3 walkDirection = Vector3.right; // Direction of movement (default: left/-X)
 
     private IEnumerator DocWalkRoutine()
     {
         float elapsedTime = 0f;
 
-        // Move the object in the -x direction for the duration
+        // Move the object in the specified direction for the duration
         while (elapsedTime < walkDuration)
         {
-            // Calculate movement step
-            transform.Translate(Vector3.right * walkSpeed * Time.deltaTime);
+            // Calculate movement step based on direction
+            transform.Translate(walkDirection.normalized * walkSpeed * Time.deltaTime);
 
             // Update the elapsed time
             elapsedTime += Time.deltaTime;
