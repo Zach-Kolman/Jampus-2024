@@ -24,10 +24,17 @@ public class DocWalk : MonoBehaviour
             // Wait until the next frame
             yield return null;
         }
+
+        GetComponent<Animator>().SetTrigger("Stop");
     }
 
     public void Walking()
     {
         StartCoroutine(DocWalkRoutine());
+    }
+
+    public void ReverseWalk()
+    {
+        walkDirection = -walkDirection;
     }
 }

@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 

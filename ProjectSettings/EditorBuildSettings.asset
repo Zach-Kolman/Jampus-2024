@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Parlor.unity
     guid: 246848a0e840f104a84be6f913590a3e
+  - enabled: 1
+    path: Assets/Scenes/Clinic.unity
+    guid: 5fdc79d48912b224c9308c0ba742b7c3
+  - enabled: 1
+    path: Assets/Scenes/Inside Clinic.unity
+    guid: 190adfb8915bca44fb560de4ad93f433
+  - enabled: 1
+    path: Assets/Scenes/Lair.unity
+    guid: 8182fa554012b114fa629091f977be08
   m_configObjects: {}

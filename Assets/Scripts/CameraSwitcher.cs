@@ -27,13 +27,13 @@ public class CameraSwitcher : MonoBehaviour
         vcam.Priority = basePriority + 1;
     }
 
-    public void SwitchCameraMain()
-    {
-        foreach(GameObject gam in camManager.vcams)
-        {
-            gam.GetComponent<CinemachineVirtualCamera>().Priority = basePriority;
-        }
+    //public void SwitchCameraMain()
+    //{
+    //    foreach(GameObject gam in camManager.vcams)
+    //    {
+    //        gam.GetComponent<CinemachineVirtualCamera>().Priority = basePriority;
+    //    }
 
-        mainCam.Priority = basePriority + 1;
-    }
+    //    mainCam.Priority = basePriority + 1;
+    //}
 }

@@ -8,11 +8,13 @@ public class CameraTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag != "Player") return;
+
         parent.GetComponent<CameraSwitcher>().SwitchCamera();
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        parent.GetComponent<CameraSwitcher>().SwitchCameraMain();
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    parent.GetComponent<CameraSwitcher>().SwitchCameraMain();
+    //}
 }
